@@ -3,7 +3,6 @@ import { motion, useScroll, useTransform, useInView } from 'motion/react';
 import {
   Mail,
   Phone,
-  MapPin,
   Briefcase,
   GraduationCap,
   Code,
@@ -275,25 +274,27 @@ export default function App() {
           className="max-w-3xl mx-auto"
         >
           <div className="bg-gradient-to-br from-purple-900/40 to-pink-900/40 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-white/10">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <ContactItem
-                icon={Mail}
-                label="Email"
-                value="adrian2000tg3@gmail.com"
+            <div className="flex flex-col items-center gap-6">
+              <motion.a
                 href="mailto:adrian2000tg3@gmail.com"
-              />
-              <ContactItem
-                icon={Phone}
-                label="Teléfono"
-                value="633-93-73-52"
-                href="tel:633937352"
-              />
-              <ContactItem
-                icon={MapPin}
-                label="Ubicación"
-                value="Villamalea"
-                subValue="C/Balsa 29"
-              />
+                whileHover={{ scale: 1.03 }}
+                className="w-full max-w-2xl bg-white/5 rounded-2xl p-8 md:p-10 hover:bg-white/10 transition-all text-center"
+              >
+                <Mail className="w-10 h-10 mx-auto mb-4 text-purple-400" />
+                <p className="text-gray-400 text-sm mb-2">Email</p>
+                <p className="text-xl md:text-2xl font-semibold break-words">
+                  adrian2000tg3@gmail.com
+                </p>
+              </motion.a>
+
+              <div className="w-full max-w-md">
+                <ContactItem
+                  icon={Phone}
+                  label="Teléfono"
+                  value="633-93-73-52"
+                  href="tel:633937352"
+                />
+              </div>
             </div>
           </div>
         </motion.div>
