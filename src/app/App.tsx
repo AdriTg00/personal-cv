@@ -213,7 +213,7 @@ export default function App() {
           />
         </div>
       </Section>
-      <Section id="projects" title="Proyectos destacados">
+      <Section id="projects" title="Proyectos de desarrollo">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
