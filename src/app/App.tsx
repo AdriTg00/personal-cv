@@ -20,6 +20,7 @@ import {
 import fotoPerfil from "../assets/adrian.png";
 import championsImg from "../assets/CHAMPIONS.png";
 import reyCerdosImg from "../assets/REYCERDOS.png";
+import criptografiaImg from "../assets/CRIPTografia.png";
 
 import videoVentanaMp4 from "../assets/VIDEO_VENTANA.mp4";
 import logoIntroMp4 from "../assets/LOGO_INTRO.mp4";
@@ -239,20 +240,23 @@ export default function App() {
           viewport={{ once: true }}
           className="max-w-6xl mx-auto"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            {/* CHAMPIONS */}
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full">
               <div className="flex flex-col gap-4 h-full">
-                <div className="h-80 flex items-center justify-center">
-                  <div className="mx-auto transition-transform duration-300 hover:scale-105 w-fit">
+
+                <div className="h-72 flex items-center justify-center">
+                  <div className="transition-transform duration-300 hover:scale-105">
                     <img
                       src={championsImg}
                       alt="Champions Games"
-                      className="w-120 h-120 object-contain"
+                      className="w-72 h-72 object-contain"
                     />
                   </div>
                 </div>
 
-                <h3 className="text-2xl leading-[1.2] pt-1 font-bold text-white">
+                <h3 className="text-2xl font-bold text-white">
                   Champions Games
                 </h3>
 
@@ -266,10 +270,10 @@ export default function App() {
                 </p>
 
                 <p className="text-gray-400">
-                  <span className="text-pink-400 font-semibold">Mi aportación:</span> participación destacada en el desarrollo frontend, construyendo vistas, componentes y parte de la integración con el backend.
+                  <span className="text-pink-400 font-semibold">Mi aportación:</span> desarrollo frontend, construcción de vistas y componentes e integración con backend.
                 </p>
 
-                <div className="flex flex-wrap gap-3 pt-2">
+                <div className="flex flex-wrap gap-3 mt-auto pt-2">
                   <a
                     href="https://github.com/cristobaldp/PaginaWeb_ChampionsGames-master.git"
                     target="_blank"
@@ -281,38 +285,39 @@ export default function App() {
                   </a>
 
                   <a
-                    href="AQUI_TU_DEMO_EN_RENDER"
+                    href="https://champions-game-master.vercel.app"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
                   >
                     <ExternalLink className="w-4 h-4" />
-                    Jugar demo
+                    Ver demo
                   </a>
                 </div>
               </div>
             </div>
 
+            {/* GODOT */}
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full">
               <div className="flex flex-col gap-4 h-full">
-                <div className="h-80 flex items-center justify-center">
-                  <div className="mx-auto w-fit transition-transform duration-300 hover:scale-105">
+
+                <div className="h-72 flex items-center justify-center">
+                  <div className="transition-transform duration-300 hover:scale-105">
                     <img
                       src={reyCerdosImg}
                       alt="Prototipo de videojuego con Godot"
-                      className="w-120 h-120 object-contain rounded-lg"
+                      className="w-64 h-64 object-contain"
                     />
                   </div>
                 </div>
 
-                <h3 className="text-2xl leading-[1.2] pt-1 font-bold text-white">
+                <h3 className="text-2xl font-bold text-white">
                   Prototipo de videojuego con Godot
                 </h3>
 
                 <p className="text-gray-300">
-                  Demo prototipo de videojuego desarrollada de forma individual con Godot y GDScript,
-                  integrada con Firebase para gestión de datos, desplegada en Render y lanzada mediante
-                  un launcher con interfaz desarrollado en Python.
+                  Demo de videojuego desarrollada de forma individual con Godot y GDScript,
+                  integrada con Firebase y desplegada en web. Incluye launcher propio con interfaz en Python.
                 </p>
 
                 <p className="text-gray-400">
@@ -320,10 +325,10 @@ export default function App() {
                 </p>
 
                 <p className="text-gray-400">
-                  <span className="text-pink-400 font-semibold">Mi aportación:</span> desarrollo completo del prototipo, lógica del juego, integración con base de datos, launcher en Python y despliegue.
+                  <span className="text-pink-400 font-semibold">Mi aportación:</span> desarrollo completo del juego, lógica, integración con base de datos y despliegue.
                 </p>
 
-                <div className="flex flex-wrap gap-3 pt-2">
+                <div className="flex flex-wrap gap-3 mt-auto pt-2">
                   <a
                     href="https://github.com/AdriTg00/VIDEOJUEGO_2D.git"
                     target="_blank"
@@ -346,6 +351,54 @@ export default function App() {
                 </div>
               </div>
             </div>
+
+            {/* SECUREDROP */}
+            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full">
+              <div className="flex flex-col gap-4 h-full">
+
+                <div className="h-72 flex items-center justify-center">
+                  <div className="transition-transform duration-300 hover:scale-105">
+                    <img
+                      src={criptografiaImg}
+                      alt="Proyecto de criptografía en Java"
+                      className="w-64 h-64 object-contain"
+                    />
+                  </div>
+                </div>
+
+                <h3 className="text-2xl font-bold text-white">
+                  SecureDrop — Securización en Java
+                </h3>
+
+                <p className="text-gray-300">
+                  Aplicación cliente-servidor por consola desarrollada en Java mediante sockets TCP,
+                  orientada a autenticación, envío de mensajes y control de acceso por roles.
+                  Diseñada como base para implementar mejoras de seguridad.
+                </p>
+
+                <p className="text-gray-400">
+                  <span className="text-purple-400 font-semibold">Tecnologías:</span> Java, TCP Sockets, SSL/TLS, AES, RSA
+                </p>
+
+                <p className="text-gray-400">
+                  <span className="text-pink-400 font-semibold">Mi aportación:</span> desarrollo de arquitectura cliente-servidor,
+                  autenticación, gestión de mensajes y evolución hacia un sistema seguro.
+                </p>
+
+                <div className="flex flex-wrap gap-3 mt-auto pt-2">
+                  <a
+                    href="https://github.com/AdriTg00/Criptografia.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:shadow-lg hover:shadow-purple-500/40 transition-all duration-300 transform hover:scale-105"
+                  >
+                    <Github className="w-4 h-4" />
+                    Ver repositorio
+                  </a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </motion.div>
       </Section>
