@@ -251,7 +251,7 @@ export default function App() {
                   <img
                     src={championsImg}
                     alt="Champions Games"
-                    className="w-72 h-72 object-contain"
+                    className="w-90 h-90 object-contain"
                   />
                 </a>
 
@@ -307,7 +307,7 @@ export default function App() {
                   <img
                     src={reyCerdosImg}
                     alt="Prototipo de videojuego con Godot"
-                    className="w-72 h-72 object-contain rounded-lg"
+                    className="w-90 h-90 object-contain rounded-lg"
                   />
                 </a>
 
