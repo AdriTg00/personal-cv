@@ -223,11 +223,7 @@ export default function App() {
           className="max-w-4xl mx-auto"
         >
           <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-white/10 text-center">
-            <Video className="w-12 h-12 mx-auto mb-4 text-pink-400" />
-
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Proyecto audiovisual destacado
-            </h3>
+            <Video className="w-12 h-12 mx-auto mb-6 text-pink-400" />
 
             <p className="text-gray-300 text-lg mb-3">
               Vídeo profesional realizado durante mi etapa en DoingLight Technologies.
