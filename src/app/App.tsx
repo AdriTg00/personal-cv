@@ -16,7 +16,24 @@ import {
   ExternalLink,
   Download
 } from 'lucide-react';
+
 import fotoPerfil from "../assets/adrian.png";
+import championsImg from "../assets/CHAMPIONS.png";
+import reyCerdosImg from "../assets/REYCERDOS.png";
+
+import videoVentanaMp4 from "../assets/VIDEO_VENTANA.mp4";
+import logoIntroMp4 from "../assets/LOGO_INTRO.mp4";
+import presentacionMp4 from "../assets/PRESENTACION.mp4";
+import tubo340Mp4 from "../assets/TUBO_340.mp4";
+
+import difusorNuevoJpg from "../assets/DIFUSOR_NUEVO.jpg";
+import difusorNuevo2Jpg from "../assets/DIFUSOR_NUEVO2.jpg";
+import plano1Jpg from "../assets/PLANO1.jpg";
+import plano3Jpg from "../assets/PLANO3.jpg";
+import plano3TragaluzPng from "../assets/PLANO3_tragaluz.png";
+import plano4TragaluzPng from "../assets/PLANO4_tragaluz.png";
+
+import cvPdf from "../assets/mi-cv.pdf";
 
 export default function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -128,7 +145,7 @@ export default function App() {
               </a>
 
               <a
-                href="/mi-cv.pdf"
+                href={cvPdf}
                 download
                 className="px-8 py-3 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
               >
@@ -213,6 +230,7 @@ export default function App() {
           />
         </div>
       </Section>
+
       <Section id="projects" title="Proyectos de desarrollo">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -225,17 +243,18 @@ export default function App() {
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
               <div className="flex flex-col gap-4">
                 <a
-                  href="/CHAMPIONS.png"
+                  href={championsImg}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mx-auto w-fit transition-all duration-300"
                 >
                   <img
-                    src="/CHAMPIONS.png"
+                    src={championsImg}
                     alt="Champions Games"
                     className="w-44 h-44 object-contain"
                   />
                 </a>
+
                 <h3 className="text-2xl leading-[1.2] pt-1 font-bold text-white">
                   Champions Games
                 </h3>
@@ -280,13 +299,13 @@ export default function App() {
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
               <div className="flex flex-col gap-4">
                 <a
-                  href="/REYCERDOS.png"
+                  href={reyCerdosImg}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mx-auto w-fit transition-all duration-300"
                 >
                   <img
-                    src="/REYCERDOS.png"
+                    src={reyCerdosImg}
                     alt="Prototipo de videojuego con Godot"
                     className="w-44 h-44 object-contain rounded-lg"
                   />
@@ -303,11 +322,11 @@ export default function App() {
                 </p>
 
                 <p className="text-gray-400">
-                  <span className="text-purple-400 font-semibold">Tecnologías:</span> Godot, GDScript, Firebase, Render
+                  <span className="text-purple-400 font-semibold">Tecnologías:</span> Godot, GDScript, Python, Firebase, Render
                 </p>
 
                 <p className="text-gray-400">
-                  <span className="text-pink-400 font-semibold">Mi aportación:</span> desarrollo completo del prototipo, lógica del juego, integración con base de datos y despliegue.
+                  <span className="text-pink-400 font-semibold">Mi aportación:</span> desarrollo completo del prototipo, lógica del juego, integración con base de datos, launcher en Python y despliegue.
                 </p>
 
                 <div className="flex flex-wrap gap-3 pt-2">
@@ -355,7 +374,7 @@ export default function App() {
                 Vídeo profesional realizado durante mi etapa en DoingLight Technologies.
               </p>
               <a
-                href="/VIDEO_VENTANA.mp4"
+                href={videoVentanaMp4}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition-all duration-300 transform hover:scale-105"
@@ -374,7 +393,7 @@ export default function App() {
                 Pieza audiovisual orientada a presentación visual e identidad de marca.
               </p>
               <a
-                href="/LOGO_INTRO.mp4"
+                href={logoIntroMp4}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition-all duration-300 transform hover:scale-105"
@@ -393,7 +412,7 @@ export default function App() {
                 Trabajo de edición, montaje y acabado visual para presentación profesional.
               </p>
               <a
-                href="/PRESENTACION.mp4"
+                href={presentacionMp4}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition-all duration-300 transform hover:scale-105"
@@ -414,7 +433,7 @@ export default function App() {
 
               <div className="flex flex-wrap justify-center gap-3 mt-4">
                 <a
-                  href="/TUBO_340.mp4"
+                  href={tubo340Mp4}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition-all duration-300 transform hover:scale-105"
@@ -427,6 +446,7 @@ export default function App() {
           </div>
         </motion.div>
       </Section>
+
       <Section id="renders" title="Renders y trabajo 3D">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -437,13 +457,13 @@ export default function App() {
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <a
-              href="/DIFUSOR_NUEVO.jpg"
+              href={difusorNuevoJpg}
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500/40 transition-all duration-300"
             >
               <img
-                src="/DIFUSOR_NUEVO.jpg"
+                src={difusorNuevoJpg}
                 alt="Difusor 3D"
                 className="w-full h-64 object-cover"
               />
@@ -453,13 +473,13 @@ export default function App() {
             </a>
 
             <a
-              href="/DIFUSOR_NUEVO2.jpg"
+              href={difusorNuevo2Jpg}
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500/40 transition-all duration-300"
             >
               <img
-                src="/DIFUSOR_NUEVO2.jpg"
+                src={difusorNuevo2Jpg}
                 alt="Difusor 3D vista alternativa"
                 className="w-full h-64 object-cover"
               />
@@ -469,13 +489,13 @@ export default function App() {
             </a>
 
             <a
-              href="/PLANO1.jpg"
+              href={plano1Jpg}
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500/40 transition-all duration-300"
             >
               <img
-                src="/PLANO1.jpg"
+                src={plano1Jpg}
                 alt="Plano técnico 1"
                 className="w-full h-64 object-cover"
               />
@@ -485,13 +505,13 @@ export default function App() {
             </a>
 
             <a
-              href="/PLANO3.jpg"
+              href={plano3Jpg}
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500/40 transition-all duration-300"
             >
               <img
-                src="/PLANO3.jpg"
+                src={plano3Jpg}
                 alt="Plano técnico 3"
                 className="w-full h-64 object-cover"
               />
@@ -501,13 +521,13 @@ export default function App() {
             </a>
 
             <a
-              href="/PLANO3_tragaluz.png"
+              href={plano3TragaluzPng}
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500/40 transition-all duration-300"
             >
               <img
-                src="/PLANO3_tragaluz.png"
+                src={plano3TragaluzPng}
                 alt="Plano con tragaluz"
                 className="w-full h-64 object-cover"
               />
@@ -517,13 +537,13 @@ export default function App() {
             </a>
 
             <a
-              href="/PLANO4_tragaluz.png"
+              href={plano4TragaluzPng}
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500/40 transition-all duration-300"
             >
               <img
-                src="/PLANO4_tragaluz.png"
+                src={plano4TragaluzPng}
                 alt="Plano con tragaluz variante"
                 className="w-full h-64 object-cover"
               />
@@ -534,6 +554,7 @@ export default function App() {
           </div>
         </motion.div>
       </Section>
+
       {/* Education Section */}
       <Section id="education" title="Formación">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
