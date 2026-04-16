@@ -247,7 +247,7 @@ export default function App() {
                     <img
                       src={championsImg}
                       alt="Champions Games"
-                      className="w-95 h-95 object-contain"
+                      className="w-120 h-120 object-contain"
                     />
                   </div>
                 </div>
@@ -271,7 +271,7 @@ export default function App() {
 
                 <div className="flex flex-wrap gap-3 pt-2">
                   <a
-                    href="https://github.com/AdriTg00/VIDEOJUEGO_2D.git"
+                    href="https://github.com/cristobaldp/PaginaWeb_ChampionsGames-master.git"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:shadow-lg hover:shadow-purple-500/40 transition-all duration-300 transform hover:scale-105"
@@ -300,7 +300,7 @@ export default function App() {
                     <img
                       src={reyCerdosImg}
                       alt="Prototipo de videojuego con Godot"
-                      className="w-95 h-95 object-contain rounded-lg"
+                      className="w-120 h-120 object-contain rounded-lg"
                     />
                   </div>
                 </div>
