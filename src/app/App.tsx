@@ -294,10 +294,10 @@ export default function App() {
                   href="/TUBO_340.mp4"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition-all duration-300 transform hover:scale-105"
                 >
                   <ExternalLink className="w-4 h-4" />
-                  Tubo 340
+                  Ver vídeo
                 </a>
               </div>
             </div>
