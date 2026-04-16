@@ -66,7 +66,7 @@ export default function App() {
             className="text-center"
           >
             <motion.h1
-              className="text-5xl md:text-7xl leading-[1.15] pt-2 font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent"
+              className="text-5xl md:text-7xl leading-[1.17] pt-2 font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
@@ -363,7 +363,7 @@ export default function App() {
             viewport={{ once: true }}
             className="bg-gradient-to-br from-cyan-900/30 to-cyan-800/10 backdrop-blur-lg rounded-2xl p-8 border border-cyan-500/20"
           >
-            <h3 className="text-2xl leading-[1.2] pt-1 font-bold mb-6 flex items-center gap-3">
+            <h3 className="text-2xl leading-[1.4] pt-1 font-bold mb-6 flex items-center gap-3">
               <Globe className="w-6 h-6 text-cyan-400" />
               Idiomas
             </h3>
@@ -431,7 +431,7 @@ function Section({ id, title, children }: { id: string; title: string; children:
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-4xl md:text-5xl leading-[1.2] font-bold text-center mb-16 pt-2 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+        <h2 className="text-4xl md:text-5xl leading-[1.4] font-bold text-center mb-16 pt-2 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
           {title}
         </h2>
         {children}
@@ -503,7 +503,7 @@ function ExperienceCard({
           <Icon className="w-8 h-8" />
         </div>
         <div className="flex-1">
-          <h3 className="text-2xl leading-[1.2] pt-1 font-bold mb-2">{title}</h3>
+          <h3 className="text-2xl leading-[1.4] pt-1 font-bold mb-2">{title}</h3>
           <a
             href={url}
             target="_blank"
@@ -534,7 +534,7 @@ function EducationCard({ title, level, delay }: { title: string; level: string; 
       <div className="flex items-start gap-4">
         <GraduationCap className="w-8 h-8 text-purple-400 flex-shrink-0 mt-1" />
         <div>
-          <h3 className="text-xl leading-[1.2] pt-1 font-bold mb-2">{title}</h3>
+          <h3 className="text-xl leading-[1.4] pt-1 font-bold mb-2">{title}</h3>
           <p className="text-purple-400">{level}</p>
         </div>
       </div>
