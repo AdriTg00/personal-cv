@@ -271,7 +271,7 @@ export default function App() {
 
                 <div className="flex flex-wrap gap-3 pt-2">
                   <a
-                    href="https://github.com/cristobaldp/PaginaWeb_ChampionsGames-master.git"
+                    href="https://github.com/AdriTg00/VIDEOJUEGO_2D.git"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:shadow-lg hover:shadow-purple-500/40 transition-all duration-300 transform hover:scale-105"
@@ -325,23 +325,23 @@ export default function App() {
 
                 <div className="flex flex-wrap gap-3 pt-2">
                   <a
-                    href="/juego/juego.html"
+                    href="https://github.com/AdriTg00/VIDEOJUEGO_2D.git"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:shadow-lg hover:shadow-purple-500/40 transition-all duration-300 transform hover:scale-105"
                   >
                     <Github className="w-4 h-4" />
                     Ver repositorio
                   </a>
 
                   <a
-                    href="AQUI_TU_DEMO_EN_RENDER"
+                    href="/juego/juego.html"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
                   >
                     <ExternalLink className="w-4 h-4" />
-                    Ver demo
+                    Jugar demo
                   </a>
                 </div>
               </div>
