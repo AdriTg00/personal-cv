@@ -214,22 +214,22 @@ export default function App() {
         </div>
       </Section>
 
-      <Section id="featured-video" title="Proyecto audiovisual destacado">
+      <Section id="featured-video" title="Proyecto audiovisual">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto"
+          className="max-w-2xl mx-auto"
         >
-          <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-white/10 text-center">
-            <Video className="w-12 h-12 mx-auto mb-6 text-pink-400" />
+          <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-6 md:p-8 border border-white/10 text-center">
+            <Video className="w-10 h-10 mx-auto mb-5 text-pink-400" />
 
-            <p className="text-gray-300 text-lg mb-3">
+            <p className="text-gray-300 text-base md:text-lg mb-3">
               Vídeo profesional realizado durante mi etapa en DoingLight Technologies.
             </p>
 
-            <p className="text-gray-400 mb-8">
+            <p className="text-gray-400 mb-6 text-sm md:text-base">
               <span className="text-pink-400 font-semibold">Rol:</span> edición, montaje y acabado visual.
             </p>
 
@@ -237,15 +237,14 @@ export default function App() {
               href="/VIDEO_VENTANA.mp4"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition-all duration-300 transform hover:scale-105"
+              className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition-all duration-300 transform hover:scale-105"
             >
-              <ExternalLink className="w-5 h-5" />
+              <ExternalLink className="w-4 h-4" />
               Ver vídeo
             </a>
           </div>
         </motion.div>
       </Section>
-
       {/* Education Section */}
       <Section id="education" title="Formación">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
