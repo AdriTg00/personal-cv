@@ -223,19 +223,20 @@ export default function App() {
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
-              <a
-                href="/CHAMPIONS.png"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mx-auto w-fit rounded-2xl border border-white/10 hover:border-pink-500/40 transition-all duration-300 p-4 bg-white/5"
-              >
-                <img
-                  src="/CHAMPIONS_GAMES.png"
-                  alt="Champions Games"
-                  className="w-44 h-44 object-contain rounded-xl"
-                />
-              </a>
+
               <div className="flex flex-col gap-4">
+                <a
+                  href="/CHAMPIONS_GAMES.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-auto w-fit rounded-2xl border border-white/10 hover:border-pink-500/40 transition-all duration-300 p-4 bg-white/5"
+                >
+                  <img
+                    src="/CHAMPIONS_GAMES.png"
+                    alt="Champions Games"
+                    className="w-44 h-44 object-contain rounded-xl"
+                  />
+                </a>
                 <h3 className="text-2xl leading-[1.2] pt-1 font-bold text-white">
                   Champions Games
                 </h3>
