@@ -242,18 +242,13 @@ export default function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
               <div className="flex flex-col gap-4">
-                <a
-                  href={championsImg}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mx-auto block cursor-zoom-in transition-transform duration-300 hover:scale-105"
-                >
+                <div className="mx-auto block transition-transform duration-300 hover:scale-105 w-fit">
                   <img
                     src={championsImg}
                     alt="Champions Games"
-                    className="w-90 h-90 object-contain"
+                    className="w-95 h-95 object-contain"
                   />
-                </a>
+                </div>
 
                 <h3 className="text-2xl leading-[1.2] pt-1 font-bold text-white">
                   Champions Games
@@ -298,18 +293,13 @@ export default function App() {
 
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
               <div className="flex flex-col gap-4">
-                <a
-                  href={reyCerdosImg}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mx-auto block cursor-zoom-in transition-transform duration-300 hover:scale-105"
-                >
+                <div className="mx-auto w-fit transition-transform duration-300 hover:scale-105">
                   <img
                     src={reyCerdosImg}
                     alt="Prototipo de videojuego con Godot"
-                    className="w-90 h-90 object-contain rounded-lg"
+                    className="w-80 h-80 object-contain rounded-lg"
                   />
-                </a>
+                </div>
 
                 <h3 className="text-2xl leading-[1.2] pt-1 font-bold text-white">
                   Prototipo de videojuego con Godot
