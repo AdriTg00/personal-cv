@@ -242,12 +242,14 @@ export default function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full">
               <div className="flex flex-col gap-4 h-full">
-                <div className="mx-auto block transition-transform duration-300 hover:scale-105 w-fit">
-                  <img
-                    src={championsImg}
-                    alt="Champions Games"
-                    className="w-95 h-95 object-contain"
-                  />
+                <div className="h-80 flex items-center justify-center">
+                  <div className="mx-auto transition-transform duration-300 hover:scale-105 w-fit">
+                    <img
+                      src={championsImg}
+                      alt="Champions Games"
+                      className="w-80 h-80 object-contain"
+                    />
+                  </div>
                 </div>
 
                 <h3 className="text-2xl leading-[1.2] pt-1 font-bold text-white">
@@ -293,12 +295,14 @@ export default function App() {
 
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full">
               <div className="flex flex-col gap-4 h-full">
-                <div className="mx-auto w-fit transition-transform duration-300 hover:scale-105">
-                  <img
-                    src={reyCerdosImg}
-                    alt="Prototipo de videojuego con Godot"
-                    className="w-80 h-80 object-contain rounded-lg"
-                  />
+                <div className="h-80 flex items-center justify-center">
+                  <div className="mx-auto w-fit transition-transform duration-300 hover:scale-105">
+                    <img
+                      src={reyCerdosImg}
+                      alt="Prototipo de videojuego con Godot"
+                      className="w-80 h-80 object-contain rounded-lg"
+                    />
+                  </div>
                 </div>
 
                 <h3 className="text-2xl leading-[1.2] pt-1 font-bold text-white">
