@@ -276,7 +276,7 @@ export default function App() {
                   <img
                     src="/REYCERDOS.png"
                     alt="Prototipo de videojuego con Godot"
-                    className="w-full h-48 object-cover"
+                    className="w-full h-34 object-cover"
                   />
                 </a>
 
