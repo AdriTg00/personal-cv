@@ -251,7 +251,7 @@ export default function App() {
                     <img
                       src={championsImg}
                       alt="Champions Games"
-                      className="w-72 h-72 object-contain"
+                      className="w-110 h-110 object-contain"
                     />
                   </div>
                 </div>
@@ -306,7 +306,7 @@ export default function App() {
                     <img
                       src={reyCerdosImg}
                       alt="Prototipo de videojuego con Godot"
-                      className="w-64 h-64 object-contain"
+                      className="w-110 h-110 object-contain"
                     />
                   </div>
                 </div>
@@ -361,7 +361,7 @@ export default function App() {
                     <img
                       src={criptografiaImg}
                       alt="Proyecto de criptografía en Java"
-                      className="w-64 h-64 object-contain"
+                      className="w-110 h-110 object-contain"
                     />
                   </div>
                 </div>
@@ -371,7 +371,7 @@ export default function App() {
                 </h3>
 
                 <p className="text-gray-300">
-                  Aplicación cliente-servidor por consola desarrollada en Java mediante sockets TCP,
+                  Aplicación cliente-servidor por consola desarrollada en equipo y en Java mediante sockets TCP,
                   orientada a autenticación, envío de mensajes y control de acceso por roles.
                   Diseñada como base para implementar mejoras de seguridad.
                 </p>
