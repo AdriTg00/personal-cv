@@ -279,13 +279,13 @@ export default function App() {
                   </a>
 
                   <a
-                    href="https://champions-game-master.vercel.app"
+                    href="/juego/juego.html"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
                   >
                     <ExternalLink className="w-4 h-4" />
-                    Ver demo
+                    Jugar demo
                   </a>
                 </div>
               </div>
