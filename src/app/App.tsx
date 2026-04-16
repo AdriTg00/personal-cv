@@ -247,7 +247,7 @@ export default function App() {
                     <img
                       src={championsImg}
                       alt="Champions Games"
-                      className="w-80 h-80 object-contain"
+                      className="w-95 h-95 object-contain"
                     />
                   </div>
                 </div>
@@ -281,7 +281,7 @@ export default function App() {
                   </a>
 
                   <a
-                    href="/juego/juego.html"
+                    href="AQUI_TU_DEMO_EN_RENDER"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
@@ -300,7 +300,7 @@ export default function App() {
                     <img
                       src={reyCerdosImg}
                       alt="Prototipo de videojuego con Godot"
-                      className="w-80 h-80 object-contain rounded-lg"
+                      className="w-95 h-95 object-contain rounded-lg"
                     />
                   </div>
                 </div>
@@ -325,10 +325,10 @@ export default function App() {
 
                 <div className="flex flex-wrap gap-3 pt-2">
                   <a
-                    href="https://github.com/AdriTg00/VIDEOJUEGO_2D.git"
+                    href="/juego/juego.html"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:shadow-lg hover:shadow-purple-500/40 transition-all duration-300 transform hover:scale-105"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
                   >
                     <Github className="w-4 h-4" />
                     Ver repositorio
