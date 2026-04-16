@@ -245,12 +245,13 @@ export default function App() {
             {/* CHAMPIONS */}
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full">
               <div className="flex flex-col gap-4 h-full">
-                <div className="h-[520px] flex items-center justify-center">
+
+                <div className="h-72 flex items-center justify-center">
                   <div className="transition-transform duration-300 hover:scale-105">
                     <img
                       src={championsImg}
                       alt="Champions Games"
-                      className="w-[520px] h-[520px] object-contain"
+                      className="w-130 h-130 object-contain"
                     />
                   </div>
                 </div>
@@ -300,12 +301,12 @@ export default function App() {
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full">
               <div className="flex flex-col gap-4 h-full">
 
-                <div className="h-[520px] flex items-center justify-center">
+                <div className="h-72 flex items-center justify-center">
                   <div className="transition-transform duration-300 hover:scale-105">
                     <img
                       src={reyCerdosImg}
                       alt="Prototipo de videojuego con Godot"
-                      className="w-[520px] h-[520px] object-contain"
+                      className="w-130 h-130 object-contain"
                     />
                   </div>
                 </div>
