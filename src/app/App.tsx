@@ -20,7 +20,7 @@ import {
 import fotoPerfil from "../assets/adrian.png";
 import championsImg from "../assets/CHAMPIONS.png";
 import reyCerdosImg from "../assets/REYCERDOS.png";
-import criptografiaImg from "../assets/CRIPTografia.png";
+import criptografiaImg from "../assets/criptografia.png";
 
 import videoVentanaMp4 from "../assets/VIDEO_VENTANA.mp4";
 import logoIntroMp4 from "../assets/LOGO_INTRO.mp4";
