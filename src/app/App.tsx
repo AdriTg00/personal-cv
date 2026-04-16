@@ -246,8 +246,8 @@ export default function App() {
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full">
               <div className="flex flex-col gap-4 h-full">
 
-                <div className="h-72 flex items-center justify-center">
-                  <div className="transition-transform duration-300 hover:scale-105">
+                <div className="h-72 flex items-center justify-center overflow-visible">
+                  <div className="transition-transform duration-300 hover:scale-135 scale-125">
                     <img
                       src={championsImg}
                       alt="Champions Games"
@@ -301,12 +301,12 @@ export default function App() {
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full">
               <div className="flex flex-col gap-4 h-full">
 
-                <div className="h-72 flex items-center justify-center">
-                  <div className="transition-transform duration-300 hover:scale-105">
+                <div className="h-72 flex items-center justify-center overflow-visible">
+                  <div className="transition-transform duration-300 hover:scale-135 scale-125">
                     <img
                       src={reyCerdosImg}
                       alt="Prototipo de videojuego con Godot"
-                      className="w-130 h-130 object-contain"
+                      className="w-90 h-90 object-contain"
                     />
                   </div>
                 </div>
