@@ -221,35 +221,103 @@ export default function App() {
           viewport={{ once: true }}
           className="max-w-5xl mx-auto"
         >
-          <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
-            <div className="flex flex-col gap-4">
-              <h3 className="text-2xl font-bold text-white">
-                Champions Games
-              </h3>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
+              <div className="flex flex-col gap-4">
+                <h3 className="text-2xl leading-[1.2] pt-1 font-bold text-white">
+                  Champions Games
+                </h3>
 
-              <p className="text-gray-300">
-                Proyecto web full stack desarrollado en equipo, con arquitectura separada de frontend y backend,
-                integrado con base de datos MongoDB.
-              </p>
+                <p className="text-gray-300">
+                  Proyecto web full stack desarrollado en equipo, con arquitectura separada de frontend y backend,
+                  integrado con base de datos MongoDB.
+                </p>
 
-              <p className="text-gray-400">
-                <span className="text-purple-400 font-semibold">Tecnologías:</span> React, Node.js, Express, MongoDB
-              </p>
+                <p className="text-gray-400">
+                  <span className="text-purple-400 font-semibold">Tecnologías:</span> React, Node.js, Express, MongoDB
+                </p>
 
-              <p className="text-gray-400">
-                <span className="text-pink-400 font-semibold">Mi aportación:</span> participación destacada en el desarrollo frontend, construyendo vistas, componentes y parte de la integración con el backend.
-              </p>
+                <p className="text-gray-400">
+                  <span className="text-pink-400 font-semibold">Mi aportación:</span> participación destacada en el desarrollo frontend, construyendo vistas, componentes y parte de la integración con el backend.
+                </p>
 
-              <div className="flex flex-wrap gap-3 pt-2">
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <a
+                    href="https://github.com/cristobaldp/PaginaWeb_ChampionsGames-master.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:shadow-lg hover:shadow-purple-500/40 transition-all duration-300 transform hover:scale-105"
+                  >
+                    <Github className="w-4 h-4" />
+                    Ver repositorio
+                  </a>
+
+                  <a
+                    href="https://champions-game-master.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    Ver demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
+              <div className="flex flex-col gap-4">
                 <a
-                  href="https://github.com/cristobaldp/PaginaWeb_ChampionsGames-master.git"
+                  href="/REYCERDOS.png"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:shadow-lg hover:shadow-purple-500/40 transition-all duration-300 transform hover:scale-105"
+                  className="block overflow-hidden rounded-2xl border border-white/10 hover:border-pink-500/40 transition-all duration-300"
                 >
-                  <Github className="w-4 h-4" />
-                  Ver repositorio
+                  <img
+                    src="/REYCERDOS.png"
+                    alt="Prototipo de videojuego con Godot"
+                    className="w-full h-48 object-cover"
+                  />
                 </a>
+
+                <h3 className="text-2xl leading-[1.2] pt-1 font-bold text-white">
+                  Prototipo de videojuego con Godot
+                </h3>
+
+                <p className="text-gray-300">
+                  Demo prototipo de videojuego desarrollada de forma individual con Godot y GDScript,
+                  integrada con Firebase para gestión de datos y desplegada en Render.
+                </p>
+
+                <p className="text-gray-400">
+                  <span className="text-purple-400 font-semibold">Tecnologías:</span> Godot, GDScript, Firebase, Render
+                </p>
+
+                <p className="text-gray-400">
+                  <span className="text-pink-400 font-semibold">Mi aportación:</span> desarrollo completo del prototipo, lógica del juego, integración con base de datos y despliegue.
+                </p>
+
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <a
+                    href="https://github.com/AdriTg00/VIDEOJUEGO_2D.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:shadow-lg hover:shadow-purple-500/40 transition-all duration-300 transform hover:scale-105"
+                  >
+                    <Github className="w-4 h-4" />
+                    Ver repositorio
+                  </a>
+
+                  <a
+                    href="AQUI_TU_DEMO_EN_RENDER"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    Ver demo
+                  </a>
+                </div>
               </div>
             </div>
           </div>
