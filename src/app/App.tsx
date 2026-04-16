@@ -223,6 +223,18 @@ export default function App() {
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
+              <a
+                href="/CHAMPIONS.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-auto w-fit rounded-2xl border border-white/10 hover:border-pink-500/40 transition-all duration-300 p-4 bg-white/5"
+              >
+                <img
+                  src="/CHAMPIONS_GAMES.png"
+                  alt="Champions Games"
+                  className="w-44 h-44 object-contain rounded-xl"
+                />
+              </a>
               <div className="flex flex-col gap-4">
                 <h3 className="text-2xl leading-[1.2] pt-1 font-bold text-white">
                   Champions Games
@@ -271,12 +283,12 @@ export default function App() {
                   href="/REYCERDOS.png"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block overflow-hidden rounded-2xl border border-white/10 hover:border-pink-500/40 transition-all duration-300"
+                  className="mx-auto w-fit rounded-2xl border border-white/10 hover:border-pink-500/40 transition-all duration-300 p-4 bg-white/5"
                 >
                   <img
                     src="/REYCERDOS.png"
                     alt="Prototipo de videojuego con Godot"
-                    className="mx-auto w-fit overflow-hidden rounded-2xl border border-white/10 hover:border-pink-500/40 transition-all duration-300 p-3 bg-white/5"
+                    className="w-44 h-44 object-contain rounded-xl"
                   />
                 </a>
 
@@ -286,7 +298,8 @@ export default function App() {
 
                 <p className="text-gray-300">
                   Demo prototipo de videojuego desarrollada de forma individual con Godot y GDScript,
-                  integrada con Firebase para gestión de datos y desplegada en Render.
+                  integrada con Firebase para gestión de datos, desplegada en Render y lanzada mediante
+                  un launcher con interfaz desarrollado en Python.
                 </p>
 
                 <p className="text-gray-400">
