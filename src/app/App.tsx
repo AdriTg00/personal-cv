@@ -242,7 +242,7 @@ export default function App() {
 
               <div className="flex flex-wrap gap-3 pt-2">
                 <a
-                  href= "https://github.com/cristobaldp/PaginaWeb_ChampionsGames-master.git"
+                  href="https://github.com/cristobaldp/PaginaWeb_ChampionsGames-master.git"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:shadow-lg hover:shadow-purple-500/40 transition-all duration-300 transform hover:scale-105"
@@ -343,6 +343,113 @@ export default function App() {
                 </a>
               </div>
             </div>
+          </div>
+        </motion.div>
+      </Section>
+      <Section id="renders" title="Renders y trabajo 3D">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="max-w-6xl mx-auto"
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a
+              href="/DIFUSOR_NUEVO.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500/40 transition-all duration-300"
+            >
+              <img
+                src="/DIFUSOR_NUEVO.jpg"
+                alt="Difusor 3D"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4 text-center text-gray-300 font-semibold">
+                Difusor 3D
+              </div>
+            </a>
+
+            <a
+              href="/DIFUSOR_NUEVO2.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500/40 transition-all duration-300"
+            >
+              <img
+                src="/DIFUSOR_NUEVO2.jpg"
+                alt="Difusor 3D vista alternativa"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4 text-center text-gray-300 font-semibold">
+                Difusor 3D · Vista alternativa
+              </div>
+            </a>
+
+            <a
+              href="/PLANO1.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500/40 transition-all duration-300"
+            >
+              <img
+                src="/PLANO1.jpg"
+                alt="Plano técnico 1"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4 text-center text-gray-300 font-semibold">
+                Plano técnico 1
+              </div>
+            </a>
+
+            <a
+              href="/PLANO3.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500/40 transition-all duration-300"
+            >
+              <img
+                src="/PLANO3.jpg"
+                alt="Plano técnico 3"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4 text-center text-gray-300 font-semibold">
+                Plano técnico 3
+              </div>
+            </a>
+
+            <a
+              href="/PLANO3_tragaluz.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500/40 transition-all duration-300"
+            >
+              <img
+                src="/PLANO3_tragaluz.png"
+                alt="Plano con tragaluz"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4 text-center text-gray-300 font-semibold">
+                Plano con tragaluz
+              </div>
+            </a>
+
+            <a
+              href="/PLANO4_tragaluz.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500/40 transition-all duration-300"
+            >
+              <img
+                src="/PLANO4_tragaluz.png"
+                alt="Plano con tragaluz variante"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4 text-center text-gray-300 font-semibold">
+                Plano con tragaluz · Variante
+              </div>
+            </a>
           </div>
         </motion.div>
       </Section>
