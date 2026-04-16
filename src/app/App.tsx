@@ -237,12 +237,12 @@ export default function App() {
               </p>
 
               <p className="text-gray-400">
-                <span className="text-pink-400 font-semibold">Mi aportación:</span> aquí pones exactamente qué hiciste tú.
+                <span className="text-pink-400 font-semibold">Mi aportación:</span> participación destacada en el desarrollo frontend, construyendo vistas, componentes y parte de la integración con el backend.
               </p>
 
               <div className="flex flex-wrap gap-3 pt-2">
                 <a
-                  href="AQUI_EL_LINK_DEL_REPO"
+                  href= "https://github.com/cristobaldp/PaginaWeb_ChampionsGames-master.git"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:shadow-lg hover:shadow-purple-500/40 transition-all duration-300 transform hover:scale-105"
