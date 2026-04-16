@@ -214,6 +214,42 @@ export default function App() {
         </div>
       </Section>
 
+      <Section id="featured-video" title="Proyecto audiovisual destacado">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="max-w-4xl mx-auto"
+        >
+          <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-white/10 text-center">
+            <Video className="w-12 h-12 mx-auto mb-4 text-pink-400" />
+
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              Proyecto audiovisual destacado
+            </h3>
+
+            <p className="text-gray-300 text-lg mb-3">
+              Vídeo profesional realizado durante mi etapa en DoingLight Technologies.
+            </p>
+
+            <p className="text-gray-400 mb-8">
+              <span className="text-pink-400 font-semibold">Rol:</span> edición, montaje y acabado visual.
+            </p>
+
+            <a
+              href="/VIDEO_VENTANA.mp4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition-all duration-300 transform hover:scale-105"
+            >
+              <ExternalLink className="w-5 h-5" />
+              Ver vídeo
+            </a>
+          </div>
+        </motion.div>
+      </Section>
+
       {/* Education Section */}
       <Section id="education" title="Formación">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
