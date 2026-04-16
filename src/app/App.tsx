@@ -361,7 +361,7 @@ export default function App() {
                     <img
                       src={criptografiaImg}
                       alt="Proyecto de criptografía en Java"
-                      className="w-110 h-110 object-contain"
+                      className="w-100 h-100 object-contain"
                     />
                   </div>
                 </div>
