@@ -214,34 +214,103 @@ export default function App() {
         </div>
       </Section>
 
-      <Section id="featured-video" title="Proyecto audiovisual">
+      <Section id="featured-video" title="Proyectos audiovisuales">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="max-w-2xl mx-auto"
+          className="max-w-4xl mx-auto"
         >
-          <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-6 md:p-8 border border-white/10 text-center">
-            <Video className="w-10 h-10 mx-auto mb-5 text-pink-400" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-6 border border-white/10 text-center">
+              <Video className="w-10 h-10 mx-auto mb-5 text-pink-400" />
+              <p className="text-gray-300 text-base md:text-lg mb-3 font-semibold">
+                Vídeo publicitario
+              </p>
+              <p className="text-gray-400 mb-6 text-sm md:text-base">
+                Vídeo profesional realizado durante mi etapa en DoingLight Technologies.
+              </p>
+              <a
+                href="/VIDEO_VENTANA.mp4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition-all duration-300 transform hover:scale-105"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Ver vídeo
+              </a>
+            </div>
 
-            <p className="text-gray-300 text-base md:text-lg mb-3">
-              Vídeo profesional realizado durante mi etapa en DoingLight Technologies.
-            </p>
+            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-6 border border-white/10 text-center">
+              <Video className="w-10 h-10 mx-auto mb-5 text-pink-400" />
+              <p className="text-gray-300 text-base md:text-lg mb-3 font-semibold">
+                Logo intro
+              </p>
+              <p className="text-gray-400 mb-6 text-sm md:text-base">
+                Pieza audiovisual orientada a presentación visual e identidad de marca.
+              </p>
+              <a
+                href="/LOGO_INTRO.mp4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition-all duration-300 transform hover:scale-105"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Ver vídeo
+              </a>
+            </div>
 
-            <p className="text-gray-400 mb-6 text-sm md:text-base">
-              <span className="text-pink-400 font-semibold">Rol:</span> edición, montaje y acabado visual.
-            </p>
+            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-6 border border-white/10 text-center">
+              <Video className="w-10 h-10 mx-auto mb-5 text-pink-400" />
+              <p className="text-gray-300 text-base md:text-lg mb-3 font-semibold">
+                Presentación
+              </p>
+              <p className="text-gray-400 mb-6 text-sm md:text-base">
+                Trabajo de edición, montaje y acabado visual para presentación profesional.
+              </p>
+              <a
+                href="/PRESENTACION.mp4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition-all duration-300 transform hover:scale-105"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Ver vídeo
+              </a>
+            </div>
 
-            <a
-              href="/VIDEO_VENTANA.mp4"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:shadow-lg hover:shadow-pink-500/40 transition-all duration-300 transform hover:scale-105"
-            >
-              <ExternalLink className="w-4 h-4" />
-              Ver vídeo
-            </a>
+            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-6 border border-white/10 text-center">
+              <Video className="w-10 h-10 mx-auto mb-5 text-pink-400" />
+              <p className="text-gray-300 text-base md:text-lg mb-3 font-semibold">
+                Tubo 340 / Tubo 525
+              </p>
+              <p className="text-gray-400 mb-3 text-sm md:text-base">
+                Variaciones audiovisuales de producto con enfoque visual y publicitario.
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-3 mt-4">
+                <a
+                  href="/TUBO_340.mp4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  Tubo 340
+                </a>
+
+                <a
+                  href="/TUBO_340.mp4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  Tubo 525
+                </a>
+              </div>
+            </div>
           </div>
         </motion.div>
       </Section>
