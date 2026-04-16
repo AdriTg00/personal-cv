@@ -237,7 +237,7 @@ export default function App() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="max-w-5xl mx-auto"
+          className="max-w-6xl mx-auto"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
@@ -246,12 +246,12 @@ export default function App() {
                   href={championsImg}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mx-auto w-fit transition-all duration-300"
+                  className="mx-auto block cursor-zoom-in transition-transform duration-300 hover:scale-105"
                 >
                   <img
                     src={championsImg}
                     alt="Champions Games"
-                    className="w-44 h-44 object-contain"
+                    className="w-72 h-72 object-contain"
                   />
                 </a>
 
@@ -302,12 +302,12 @@ export default function App() {
                   href={reyCerdosImg}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mx-auto w-fit transition-all duration-300"
+                  className="mx-auto block cursor-zoom-in transition-transform duration-300 hover:scale-105"
                 >
                   <img
                     src={reyCerdosImg}
                     alt="Prototipo de videojuego con Godot"
-                    className="w-44 h-44 object-contain rounded-lg"
+                    className="w-72 h-72 object-contain rounded-lg"
                   />
                 </a>
 
@@ -355,7 +355,6 @@ export default function App() {
           </div>
         </motion.div>
       </Section>
-
       <Section id="featured-video" title="Proyectos audiovisuales">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
