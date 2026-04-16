@@ -240,8 +240,8 @@ export default function App() {
           className="max-w-6xl mx-auto"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
-              <div className="flex flex-col gap-4">
+            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full">
+              <div className="flex flex-col gap-4 h-full">
                 <div className="mx-auto block transition-transform duration-300 hover:scale-105 w-fit">
                   <img
                     src={championsImg}
@@ -291,8 +291,8 @@ export default function App() {
               </div>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
-              <div className="flex flex-col gap-4">
+            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full">
+              <div className="flex flex-col gap-4 h-full">
                 <div className="mx-auto w-fit transition-transform duration-300 hover:scale-105">
                   <img
                     src={reyCerdosImg}
