@@ -273,7 +273,7 @@ export default function App() {
                   <span className="text-pink-400 font-semibold">Mi aportación:</span> desarrollo frontend, construcción de vistas y componentes e integración con backend.
                 </p>
                 <p className="text-gray-400">
-                  <span className="text-yellow-400 font-semibold">Login de prueba:</span> Usuario: prueba <br /> Contraseña: 12345678
+                  <span className="text-yellow-400 font-semibold">Login de prueba:</span> <br /> Usuario: prueba <br /> Contraseña: 12345678
                 </p>
 
                 <div className="flex flex-wrap gap-3 mt-auto pt-2">
