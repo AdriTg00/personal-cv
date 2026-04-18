@@ -285,7 +285,7 @@ export default function App() {
                   </a>
 
                   <a
-                    href="https://champions-game-master.vercel.app"
+                    href="https://championsweb.adriantarancon.dev/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
