@@ -21,6 +21,7 @@ import fotoPerfil from "../assets/adrian.png";
 import championsImg from "../assets/CHAMPIONS.png";
 import reyCerdosImg from "../assets/REYCERDOS.png";
 import criptografiaImg from "../assets/criptografia.png";
+import memoryGameImg from "../assets/MEMORYGAME.png";
 
 import videoVentanaMp4 from "../assets/VIDEO_VENTANA.mp4";
 import logoIntroMp4 from "../assets/LOGO_INTRO.mp4";
@@ -391,6 +392,51 @@ export default function App() {
                 <div className="flex flex-wrap gap-3 mt-auto pt-2">
                   <a
                     href="https://github.com/AdriTg00/Criptografia.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:shadow-lg hover:shadow-purple-500/40 transition-all duration-300 transform hover:scale-105"
+                  >
+                    <Github className="w-4 h-4" />
+                    Ver repositorio
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* MEMORY GAME ANDROID */}
+            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10 h-full">
+              <div className="flex flex-col gap-4 h-full">
+
+                <div className="h-72 flex items-center justify-center overflow-visible">
+                  <div className="transition-transform duration-300 hover:scale-110">
+                    <img
+                      src={memoryGameImg}
+                      alt="Juego de memoria desarrollado en Android Studio"
+                      className="w-90 h-90 object-contain"
+                    />
+                  </div>
+                </div>
+
+                <h3 className="text-2xl font-bold text-white">
+                  Juego de Memoria Android
+                </h3>
+
+                <p className="text-gray-300">
+                  Minijuego de cartas por parejas desarrollado en <span className="text-purple-400 font-semibold">Android Studio</span>,
+                  enfocado en la lógica de emparejamiento, interacción visual y dinámica de juego.
+                </p>
+
+                <p className="text-gray-400">
+                  <span className="text-purple-400 font-semibold">Tecnologías:</span> Android Studio, Java, XML
+                </p>
+
+                <p className="text-gray-400">
+                  <span className="text-pink-400 font-semibold">Mi aportación:</span> desarrollo completo del proyecto de forma individual,
+                  como trabajo escolar, incluyendo lógica del juego, interfaz y estructura general de la aplicación.
+                </p>
+
+                <div className="flex flex-wrap gap-3 mt-auto pt-2">
+                  <a
+                    href="https://github.com/AdriTg00/game-card-android"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:shadow-lg hover:shadow-purple-500/40 transition-all duration-300 transform hover:scale-105"
