@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform, useInView } from 'motion/react';
+import { Analytics } from "@vercel/analytics/next";
 import {
   Mail,
   Phone,
