@@ -18,7 +18,6 @@ import {
   Download,
   Award
 } from 'lucide-react';
-import { Analytics } from '@vercel/analytics/react';
 
 import fotoPerfil from "../assets/adrian.png";
 import championsImg from "../assets/CHAMPIONS.png";
@@ -788,7 +787,6 @@ export default function App() {
       <footer className="py-8 text-center text-gray-500 border-t border-white/10">
         <p>© 2026 Adrián Tarancón. Todos los derechos reservados.</p>
       </footer>
-      <Analytics />
     </div>
   );
 }
