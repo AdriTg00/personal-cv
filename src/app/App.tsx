@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform, useInView } from 'motion/react';
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 import {
   Mail,
   Phone,
@@ -40,6 +40,7 @@ import plano3TragaluzPng from "../assets/PLANO3_tragaluz.png";
 import plano4TragaluzPng from "../assets/PLANO4_tragaluz.png";
 
 import cvPdf from "../assets/mi-cv.pdf";
+
 
 export default function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -787,6 +788,7 @@ export default function App() {
       <footer className="py-8 text-center text-gray-500 border-t border-white/10">
         <p>© 2026 Adrián Tarancón. Todos los derechos reservados.</p>
       </footer>
+       <Analytics />
     </div>
   );
 }
