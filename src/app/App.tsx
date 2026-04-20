@@ -28,6 +28,8 @@ import videoVentanaMp4 from "../assets/VIDEO_VENTANA.mp4";
 import logoIntroMp4 from "../assets/LOGO_INTRO.mp4";
 import presentacionMp4 from "../assets/PRESENTACION.mp4";
 import tubo340Mp4 from "../assets/TUBO_340.mp4";
+import accesoPdf from "../assets/acceso.pdf";
+import pythonPdf from "../assets/python.pdf";
 
 import difusorNuevoJpg from "../assets/DIFUSOR_NUEVO.jpg";
 import difusorNuevo2Jpg from "../assets/DIFUSOR_NUEVO2.jpg";
@@ -657,18 +659,16 @@ export default function App() {
           <CertificationCard
             title="Python TOTAL - Programador Avanzado en 16 días (Incluye IA)"
             provider="Udemy"
-            issued="jun. 2025"
-            expires="ago. 2025"
             credentialUrl="https://www.udemy.com/certificate/UC-66228eb6-186c-4066-be69-1c776de4b12a/"
+            credentialUrl={pythonPdf}
             delay={0}
           />
 
           <CertificationCard
             title="Acceso a datos"
             provider="Udemy"
-            issued="abr. 2025"
-            expires="may. 2025"
             credentialUrl="https://www.udemy.com/certificate/UC-dd44fa70-6b23-4db0-a2af-7b195862ab4a/"
+            credentialUrl={accesoPdf}
             delay={0.1}
           />
         </div>
