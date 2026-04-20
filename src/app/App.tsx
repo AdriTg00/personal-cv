@@ -14,7 +14,8 @@ import {
   Github,
   Linkedin,
   ExternalLink,
-  Download
+  Download,
+  Award
 } from 'lucide-react';
 
 import fotoPerfil from "../assets/adrian.png";
@@ -650,6 +651,29 @@ export default function App() {
         </motion.div>
       </Section>
 
+      {/* Certifications Section */}
+      <Section id="certifications" title="Licencias y certificaciones">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <CertificationCard
+            title="Python TOTAL - Programador Avanzado en 16 días (Incluye IA)"
+            provider="Udemy"
+            issued="jun. 2025"
+            expires="ago. 2025"
+            credentialUrl="https://www.udemy.com/certificate/UC-66228eb6-186c-4066-be69-1c776de4b12a/"
+            delay={0}
+          />
+
+          <CertificationCard
+            title="Acceso a datos"
+            provider="Udemy"
+            issued="abr. 2025"
+            expires="may. 2025"
+            credentialUrl="https://www.udemy.com/certificate/UC-dd44fa70-6b23-4db0-a2af-7b195862ab4a/"
+            delay={0.1}
+          />
+        </div>
+      </Section>
+
       {/* Education Section */}
       <Section id="education" title="Formación">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -882,6 +906,54 @@ function EducationCard({ title, level, delay }: { title: string; level: string; 
         <div>
           <h3 className="text-xl leading-[1.4] pt-1 font-bold mb-2">{title}</h3>
           <p className="text-purple-400">{level}</p>
+        </div>
+      </div>
+    </motion.div>
+  );
+}
+function CertificationCard({
+  title,
+  provider,
+  credentialUrl,
+  delay
+}: {
+  title: string;
+  provider: string;
+  credentialUrl?: string;
+  delay: number;
+}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay }}
+      viewport={{ once: true }}
+      whileHover={{ y: -5 }}
+      className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-cyan-500/50 transition-all duration-300"
+    >
+      <div className="flex items-start gap-4">
+        <Award className="w-8 h-8 text-cyan-400 flex-shrink-0 mt-1" />
+
+        <div className="flex-1">
+          <h3 className="text-xl leading-[1.4] pt-1 font-bold mb-2">{title}</h3>
+          <p className="text-cyan-400 font-medium mb-4">{provider}</p>
+
+          {credentialUrl && credentialUrl !== "#" ? (
+            <a
+              href={credentialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
+            >
+              <ExternalLink className="w-4 h-4" />
+              Mostrar credencial
+            </a>
+          ) : (
+            <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/5 border border-white/10 rounded-full text-gray-400">
+              <ExternalLink className="w-4 h-4" />
+              Añadir enlace de credencial
+            </span>
+          )}
         </div>
       </div>
     </motion.div>
