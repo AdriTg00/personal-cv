@@ -74,7 +74,7 @@ export default function App() {
       <motion.section
         ref={heroRef}
         style={{ opacity, scale }}
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
+        className="relative min-h-screen flex items-center justify-center overflow-visible"
       >
         {/* Animated background */}
         <div className="absolute inset-0 opacity-20">
@@ -167,7 +167,7 @@ export default function App() {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer"
+          className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 cursor-pointer"
           onClick={() => scrollToSection('about')}
         >
           <ChevronDown className="w-8 h-8 text-purple-400" />
@@ -788,7 +788,7 @@ export default function App() {
       <footer className="py-8 text-center text-gray-500 border-t border-white/10">
         <p>© 2026 Adrián Tarancón. Todos los derechos reservados.</p>
       </footer>
-       <Analytics />
+      <Analytics />
     </div>
   );
 }
