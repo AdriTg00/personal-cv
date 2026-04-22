@@ -167,7 +167,7 @@ export default function App() {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
-          className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 cursor-pointer"
+          className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer"
           onClick={() => scrollToSection('about')}
         >
           <ChevronDown className="w-8 h-8 text-purple-400" />
